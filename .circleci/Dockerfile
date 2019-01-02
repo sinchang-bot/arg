@@ -4,4 +4,4 @@ COPY package.json ./
 RUN npm i
 COPY index.js test.js ./
 RUN npm run test
-RUN bash <(curl -s https://codecov.io/bash)
+CMD bash <(curl -s https://codecov.io/bash)
